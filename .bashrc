@@ -1,5 +1,3 @@
-cd ~
-
 SSH_ENV=$HOME/.ssh/environment
   
 # start the ssh-agent
