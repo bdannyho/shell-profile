@@ -1,24 +1,31 @@
 [user]
-	name = Erwan Normand
-	email = normand.erwan@protonmail.com
+  name = Erwan Normand
+  email = normand.erwan@protonmail.com
+
 [push]
-	default = simple
+  default = simple
+
 [alias]
-	tree = log --graph --full-history --all --color
-	replace = "!f() { git grep -l "${1}" | xargs sed -i "s/${1}/${2}/g"; }; f"
+  tree = log --graph --full-history --all --color
+  replace = "!f() { git grep -l "${1}" | xargs sed -i "s/${1}/${2}/g"; }; f"
+
 [color]
-	ui = true
+  ui = true
+
 [color "diff-highlight"]
-	oldNormal = red 
-	oldHighlight = red 52
-	newNormal = green 
-	newHighlight = green 22
+  oldNormal = red 
+  oldHighlight = red 52
+  newNormal = green 
+  newHighlight = green 22
+
 [color "diff"]
-	meta = 227
-	frag = magenta
-	commit = 227 
-	old = red 
-	new = green 
-	whitespace = red reverse
+  meta = 227
+  frag = magenta
+  commit = 227 
+  old = red 
+  new = green 
+  whitespace = red reverse
+
 [core]
-	pager = ~/diff-so-fancy | less --tabs=4 -RFX
+  pager = ~/diff-so-fancy | less --tabs=4 -RFX
+  autocrlf = true
