@@ -6,24 +6,30 @@
   default = simple
 
 [alias]
-  tree = log --graph --full-history --all --color
+  a = add
+  ci = commit
+  co = checkout
+  d = diff
   replace = "!f() { git grep -l "${1}" | xargs sed -i "s/${1}/${2}/g"; }; f"
+  s = status -sb
+  tree = log --graph --full-history --all --color
+  uncommit = reset --soft HEAD~1
 
 [color]
   ui = true
 
 [color "diff-highlight"]
-  oldNormal = red 
+  oldNormal = red
   oldHighlight = red 52
-  newNormal = green 
+  newNormal = green
   newHighlight = green 22
 
 [color "diff"]
   meta = 227
   frag = magenta
-  commit = 227 
-  old = red 
-  new = green 
+  commit = 227
+  old = red
+  new = green
   whitespace = red reverse
 
 [core]
